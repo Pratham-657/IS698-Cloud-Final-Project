@@ -24,28 +24,11 @@ The system includes:
 
 This project represents a real-world multi-service AWS environment.
 
-**Project Structure**
-aws-final-project/
-│
-├── 01_Infrastructure/
-│   ├── terraform/           → VPC, Subnets, Security Groups
-│   ├── cloudformation/      → EC2, RDS, Lambda (stack.yaml)
-│
-├── 02_Python_Scripts/       → Boto3 automation scripts
-│
-├── 03_Lambda/               → S3 Upload Logger Lambda function
-│
-├── 04_Documentation/        → Screenshots, diagrams, report
-│
-└── README.md
-
-Each folder contains logically separated components to maintain clarity, modularity, and a clean deployment workflow.
-
 **1. Infrastructure as Code (IaC)**
 
 This section focuses on automating cloud resource creation instead of manually configuring them through the AWS Console.
 
-Terraform (Network Layer)
+**Terraform (Network Layer):**
 
 Uses Terraform to build foundational cloud networking:
 
@@ -63,7 +46,7 @@ Uses Terraform to build foundational cloud networking:
 
 Terraform provides repeatability, modularity, and version-controlled infrastructure.
 
-CloudFormation (Application Layer)
+**CloudFormation (Application Layer):**
 
 CloudFormation automates the deployment of the higher-level application resources:
 
