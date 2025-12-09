@@ -23,9 +23,9 @@ The system includes:
 * AWS CLI operations
 
 This project represents a real-world multi-service AWS environment.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **1. Infrastructure as Code (IaC)**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This section focuses on automating cloud resource creation instead of manually configuring them through the AWS Console.
 
@@ -60,9 +60,9 @@ CloudFormation automates the deployment of the higher-level application resource
 * S3 bucket notifications and triggers
 
 This separation of concerns (network in Terraform, compute/database in CloudFormation) reflects real-world DevOps practices.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **2. EC2 Web Server Deployment**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 A fully functioning web server is launched inside the VPC:
 
@@ -73,9 +73,9 @@ A fully functioning web server is launched inside the VPC:
 * Accessible via a public subnet with controlled security group rules
 
 The EC2 instance also serves as a jump server to connect to the private RDS database.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **3. RDS MySQL Database**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 A secure relational database instance is deployed inside private subnets:
 
@@ -88,9 +88,9 @@ A secure relational database instance is deployed inside private subnets:
 * Outputs include endpoint connection details
 
 This configuration follows security best practices for backend data layers.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **4. AWS Lambda – S3 Event Logging**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 A serverless Lambda function is integrated to demonstrate event-driven architecture.
 
@@ -105,9 +105,9 @@ Key functionality:
 * Stores all logs in CloudWatch for monitoring and auditing
 
 This showcases real-world serverless automation.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **5. Python Boto3 Automation**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 A collection of Python scripts designed to interact with AWS programmatically using Boto3.
 
@@ -122,9 +122,9 @@ Scripts include:
 * Manually invoking the Lambda function
 
 These scripts demonstrate automation, orchestration, and integration with AWS SDKs.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **6. AWS CLI Hands-On Operations**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The project includes multiple AWS CLI interactions such as:
 
@@ -137,9 +137,9 @@ The project includes multiple AWS CLI interactions such as:
 * Querying resources and extracting metadata
 
 This reflects comfort with command-line cloud administration, which is essential for cloud engineering roles.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **7. Auto Scaling for EC2**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 An Auto Scaling Group (ASG) is configured to ensure application scalability and availability.
 
@@ -152,9 +152,9 @@ Features:
 * Load distribution across multiple availability zones
 
 This improves resilience and mirrors real production systems.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **8. Overall System Architecture**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The final architecture includes:
 
@@ -173,8 +173,8 @@ The final architecture includes:
 * Infrastructure defined as code
 
 This demonstrates the ability to design, implement, and manage cloud-native systems.
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Conclusion**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This AWS Final Project demonstrates a complete and practical implementation of cloud computing principles using AWS services and modern DevOps practices. By integrating Infrastructure as Code, secure network design, automated resource provisioning, event-driven processing, and scalable compute architecture, the project reflects how real-world cloud environments are built and managed. It highlights the ability to design a secure VPC, deploy application and database layers, implement serverless automation with Lambda, and orchestrate AWS resources using both CLI and Python Boto3 scripts. Overall, the project showcases strong cloud engineering skills, hands-on experience with AWS tools, and a solid understanding of how to build reliable, scalable, and automated cloud solutions.
