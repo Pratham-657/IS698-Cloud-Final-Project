@@ -13,4 +13,6 @@ def lambda_handler(event, context):
         logger.info(f"New file uploaded to {bucket}: {key} (Size: {size})")
 
     return {
-        'statusCode':
+        'statusCode': 200,
+        'body': json.dumps('Lambda execution successful')
+    }
