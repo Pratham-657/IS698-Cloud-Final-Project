@@ -24,7 +24,7 @@ AWS CLI operations
 
 This project represents a real-world multi-service AWS environment.
 
-Project Structure
+**Project Structure**
 aws-final-project/
 │
 ├── 01_Infrastructure/
@@ -41,7 +41,7 @@ aws-final-project/
 
 Each folder contains logically separated components to maintain clarity, modularity, and a clean deployment workflow.
 
-1. Infrastructure as Code (IaC)
+**1. Infrastructure as Code (IaC)**
 
 This section focuses on automating cloud resource creation instead of manually configuring them through the AWS Console.
 
@@ -77,7 +77,7 @@ S3 bucket notifications and triggers
 
 This separation of concerns (network in Terraform, compute/database in CloudFormation) reflects real-world DevOps practices.
 
-2. EC2 Web Server Deployment
+**2. EC2 Web Server Deployment**
 
 A fully functioning web server is launched inside the VPC:
 
@@ -89,7 +89,7 @@ Accessible via a public subnet with controlled security group rules
 
 The EC2 instance also serves as a jump server to connect to the private RDS database.
 
-3. RDS MySQL Database
+**3. RDS MySQL Database**
 
 A secure relational database instance is deployed inside private subnets:
 
@@ -103,7 +103,7 @@ Outputs include endpoint connection details
 
 This configuration follows security best practices for backend data layers.
 
-4. AWS Lambda – S3 Event Logging
+**4. AWS Lambda – S3 Event Logging**
 
 A serverless Lambda function is integrated to demonstrate event-driven architecture.
 
@@ -119,7 +119,7 @@ Stores all logs in CloudWatch for monitoring and auditing
 
 This showcases real-world serverless automation.
 
-5. Python Boto3 Automation
+**5. Python Boto3 Automation**
 
 A collection of Python scripts designed to interact with AWS programmatically using Boto3.
 
@@ -135,7 +135,7 @@ Manually invoking the Lambda function
 
 These scripts demonstrate automation, orchestration, and integration with AWS SDKs.
 
-6. AWS CLI Hands-On Operations
+**6. AWS CLI Hands-On Operations**
 
 The project includes multiple AWS CLI interactions such as:
 
@@ -149,7 +149,7 @@ Querying resources and extracting metadata
 
 This reflects comfort with command-line cloud administration, which is essential for cloud engineering roles.
 
-7. Auto Scaling for EC2
+**7. Auto Scaling for EC2**
 
 An Auto Scaling Group (ASG) is configured to ensure application scalability and availability.
 
@@ -163,7 +163,7 @@ Load distribution across multiple availability zones
 
 This improves resilience and mirrors real production systems.
 
-8. Overall System Architecture
+**8. Overall System Architecture**
 
 The final architecture includes:
 
@@ -183,27 +183,7 @@ Infrastructure defined as code
 
 This demonstrates the ability to design, implement, and manage cloud-native systems.
 
-9. Key Learning Outcomes
-
-Through this project, the following cloud competencies were demonstrated:
-
-Building secure and scalable cloud infrastructure
-
-Applying Infrastructure as Code principles
-
-Automating deployments using CloudFormation
-
-Implementing event-driven designs with serverless services
-
-Performing AWS automation through Python and Boto3
-
-Using AWS CLI for real-time resource management
-
-Designing high-availability architectures
-
-This project reflects practical cloud engineering skills aligned with real-world industry use cases.
-
-10. Conclusion
+**Conclusion**
 
 This AWS Final Project successfully integrates multiple services into a cohesive solution that demonstrates:
 
