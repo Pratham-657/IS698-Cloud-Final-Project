@@ -1,6 +1,7 @@
 Author: Prathamesh R. Bhosale
 
 **Project Overview**
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 This project represents a complete AWS cloud deployment workflow using industry-standard tools and best practices. It integrates network provisioning, compute layers, storage services, automation scripts, event-driven architecture, and scalability features — forming a fully functional cloud application environment.
 
