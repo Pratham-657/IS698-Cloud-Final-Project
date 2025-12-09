@@ -23,6 +23,7 @@ The system includes:
 * AWS CLI operations
 
 This project represents a real-world multi-service AWS environment.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **1. Infrastructure as Code (IaC)**
 
@@ -59,6 +60,7 @@ CloudFormation automates the deployment of the higher-level application resource
 * S3 bucket notifications and triggers
 
 This separation of concerns (network in Terraform, compute/database in CloudFormation) reflects real-world DevOps practices.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **2. EC2 Web Server Deployment**
 
@@ -71,6 +73,7 @@ A fully functioning web server is launched inside the VPC:
 * Accessible via a public subnet with controlled security group rules
 
 The EC2 instance also serves as a jump server to connect to the private RDS database.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **3. RDS MySQL Database**
 
@@ -85,6 +88,7 @@ A secure relational database instance is deployed inside private subnets:
 * Outputs include endpoint connection details
 
 This configuration follows security best practices for backend data layers.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **4. AWS Lambda – S3 Event Logging**
 
@@ -101,6 +105,7 @@ Key functionality:
 * Stores all logs in CloudWatch for monitoring and auditing
 
 This showcases real-world serverless automation.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **5. Python Boto3 Automation**
 
@@ -117,6 +122,7 @@ Scripts include:
 * Manually invoking the Lambda function
 
 These scripts demonstrate automation, orchestration, and integration with AWS SDKs.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **6. AWS CLI Hands-On Operations**
 
@@ -131,6 +137,7 @@ The project includes multiple AWS CLI interactions such as:
 * Querying resources and extracting metadata
 
 This reflects comfort with command-line cloud administration, which is essential for cloud engineering roles.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **7. Auto Scaling for EC2**
 
@@ -145,6 +152,7 @@ Features:
 * Load distribution across multiple availability zones
 
 This improves resilience and mirrors real production systems.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **8. Overall System Architecture**
 
@@ -165,6 +173,7 @@ The final architecture includes:
 * Infrastructure defined as code
 
 This demonstrates the ability to design, implement, and manage cloud-native systems.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Conclusion**
 
