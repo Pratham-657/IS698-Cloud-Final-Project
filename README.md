@@ -8,7 +8,7 @@ The project demonstrates strong cloud engineering, DevOps, and automation skills
 
 The system includes:
 
-Custom VPC with public & private subnets
+* Custom VPC with public & private subnets
 
 EC2 Web Server (Apache)
 
